@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<KioskDemoSettings>
+  <GenericRecommendations>
+    <!--  URLS when a single male person is in front of the camera. -->
+    <Recommendation Id="MaleYoungerThan12" Url="http://srpidemo.azurewebsites.net/toystorem.aspx"/>
+    <Recommendation Id="MaleYoungerThan18" Url="http://srpidemo.azurewebsites.net/toystorem.aspx"/>
+    <Recommendation Id="MaleYoungerThan60" Url="http://landsbergbier.com/visitorm">
+      <SpeechKeywordBehavior>
+        <BehaviorAction Key="hungry" Url="http://srpidemo.azurewebsites.net/restaurant.aspx"/>
+        <BehaviorAction Key="coffee" Url="http://www.starbucks.ch/coffee"/>
+        <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+      </SpeechKeywordBehavior>
+      <SpeechSentimentBehavior>
+        <BehaviorAction Key="Positive" Url="http://landsbergbier.com/happy"/>
+        <BehaviorAction Key="Negative" Url="http://landsbergbier.com/unhappy"/>
+      </SpeechSentimentBehavior>
+    </Recommendation>
+    <Recommendation Id="MaleOlder" Url="http://srpidemo.azurewebsites.net/bbq.aspx"/>
+
+    <!--  URLS when a single female person is in front of the camera. -->
+    <Recommendation Id="FemaleYoungerThan12" Url="http://srpidemo.azurewebsites.net/toystoref.aspx"/>
+    <Recommendation Id="FemaleYoungerThan18" Url="http://srpidemo.azurewebsites.net/spa.aspx"/>
+    <Recommendation Id="FemaleYoungerThan60" Url="http://landsbergbier.com/visitorf">
+      <SpeechKeywordBehavior>
+        <BehaviorAction Key="hungry" Url="http://srpidemo.azurewebsites.net/restaurant.aspx"/>
+        <BehaviorAction Key="coffee" Url="http://www.starbucks.ch/coffee"/>
+        <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+      </SpeechKeywordBehavior>
+      <SpeechSentimentBehavior>
+        <BehaviorAction Key="Positive" Url="http://landsbergbier.com/happy"/>
+        <BehaviorAction Key="Negative" Url="http://landsbergbier.com/unhappy"/>
+      </SpeechSentimentBehavior>
+    </Recommendation>
+    <Recommendation Id="FemaleOlder" Url="http://srpidemo.azurewebsites.net/cruise.aspx"/>
+
+    <!--  URLS when at least 2 adults are in front of the camera -->
+    <Recommendation Id="TwoOrMoreAdults" Url="http://landsbergbier.com/group">
+      <SpeechKeywordBehavior>
+        <BehaviorAction Key="hungry" Url="http://srpidemo.azurewebsites.net/restaurant.aspx"/>
+        <BehaviorAction Key="coffee" Url="http://www.starbucks.ch/coffee"/>
+        <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+      </SpeechKeywordBehavior>
+      <SpeechSentimentBehavior>
+        <BehaviorAction Key="Positive" Url="http://landsbergbier.com/happy"/>
+        <BehaviorAction Key="Negative" Url="http://landsbergbier.com/unhappy"/>
+      </SpeechSentimentBehavior>
+    </Recommendation>
+  </GenericRecommendations>
+
+
+  <!--  Personalized recommendations when a recognized person is in front of the camera. -->
+  <PersonalizedRecommendations>
+    <Recommendation Id="Edzard Paulussen" Url="http://landsbergbier.com/edzard">
+        <SpeechKeywordBehavior>
+            <BehaviorAction Key="hungry" Url="http://srpidemo.azurewebsites.net/restaurant.aspx"/>
+            <BehaviorAction Key="coffee" Url="http://www.starbucks.ch/coffee"/>
+            <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+        </SpeechKeywordBehavior>
+        <SpeechSentimentBehavior>
+            <BehaviorAction Key="Negative" Url="http://landsbergbier.com/unhappy"/>
+            <BehaviorAction Key="Positive" Url="http://landsbergbier.com/happy"/>
+            <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+        </SpeechSentimentBehavior>
+    </Recommendation>
+
+    <Recommendation Id="Annette Ryser" Url="http://landsbergbier.com/annette">
+        <SpeechKeywordBehavior>
+            <BehaviorAction Key="hungry" Url="http://srpidemo.azurewebsites.net/restaurant.aspx"/>
+            <BehaviorAction Key="coffee" Url="http://www.starbucks.ch/coffee"/>
+            <BehaviorAction Key="parking" Url="http://landsbergbier.com/parking"/>
+        </SpeechKeywordBehavior>
+        <SpeechSentimentBehavior>
+            <BehaviorAction Key="Negative" Url="http://landsbergbier.com/unhappy"/>
+            <BehaviorAction Key="Positive" Url="http://landsbergbier.com/happy"/>
+        </SpeechSentimentBehavior>
+    </Recommendation>
+    <Recommendation Id="Satya Nadella" Url="http://srpidemo.azurewebsites.net/tools.aspx"/>
+    <Recommendation Id="Bill Gates" Url="http://srpidemo.azurewebsites.net/tools.aspx"/>
+  </PersonalizedRecommendations>
+</KioskDemoSettings>
