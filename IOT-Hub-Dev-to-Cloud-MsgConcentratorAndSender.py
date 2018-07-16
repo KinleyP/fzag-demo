@@ -17,6 +17,9 @@ from iothub_client import IoTHubClient, IoTHubClientError, IoTHubTransportProvid
 from iothub_client import IoTHubMessage, IoTHubMessageDispositionResult, IoTHubError, DeviceMethodReturnValue
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json, urllib
 
+#Set to True to use mock-up values
+TEST = False
+
 # The User and IP address for the HUE API
 HueUser = "CMwpYxbZxA0jc71uUsqROdbwT23udYeB7IZxcdy3"
 HueAPI = "192.168.1.33"
@@ -32,8 +35,6 @@ MSG_TXT = "{\"LightNo\": %s,\"LightOn\": %i,\"Brightness\": %s, \"MinBri\": 0, \
 PROTOCOL = IoTHubTransportProvider.MQTT
 MESSAGE_TIMEOUT = 10000
 
-#Set to True to use mock-up values
-TEST = True
 
 # Define some functions
 def send_confirmation_callback(message, result, user_context):
